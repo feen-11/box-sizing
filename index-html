@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>content-box</h2>
+    <p>width + padding + border + margin により要素の幅が決まる<br>合計が100%を超えるとはみ出してしまう</p>
+    <div id="contentbox"><!--content-boxの親要素-->
+      <p>content-box</p>
+    </div>
+    <h2>border-box</h2>
+    <p>要素の幅 = width(padding + border + margin + width) により決まるので<br>100%を超えることはなく、レイアウトは崩れない</p>
+    <div id="borderbox"><!--border-boxの親要素-->
+      <p>border-box</p>
+    </div>
+  </body>
+</html>
